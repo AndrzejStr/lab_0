@@ -24,7 +24,7 @@ public class TailsTest {
 	public void tailsShouldReturnListOfStringsOfSizeEqualsToInputStringLengthPlusOne() {
 		
 		assertThat(tails, Matchers.hasSize(HELLO.length() + 1));
-	}
+	} 
 	@Test
 	public void tailsShouldReturnFullStringAsFirstElement() {
 		
@@ -35,5 +35,4 @@ public class TailsTest {
 		
 		assertThat(tails.get(tails.size()-1), Matchers.equalTo(""));
 	}
-
 }
